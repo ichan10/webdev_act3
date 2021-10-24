@@ -1,0 +1,291 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+ 
+}
+.container{
+width: 95%;
+margin: auto;
+overflow: hidden;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 99.5%;
+    background-image: url(./images/image2.1.png);
+    border: 4px solid rgb(0, 0, 0);
+    font-family: cursive;
+}
+
+#navbar h3{
+    font-size: 20px;
+    float: left;
+    color: rgb(255, 236, 236);
+}
+ 
+nav ul{
+    float: right;
+    list-style: none;
+}
+#navbar li{
+    font-size: 20px;
+    display: inline;
+}
+ 
+#navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+}
+#navbar a:hover{
+    color: rgb(0, 255, 242);
+}
+ 
+#home{
+    padding-top: 5%;
+    background-image: url('./images/image4.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0%;
+}
+#home h1{
+    padding-top: 15%;
+    padding-left: 18%;
+    font-family:cursive;
+    font-size: 25px;
+    line-height: 1.6em;
+    margin: 0; 
+}
+#home p{
+    text-align: justify;
+    padding-left: 18%;
+    font-family: cursive;
+    font-size: 12px;
+    color: rgb(196, 196, 196);
+}
+#home img{
+    float: right;
+}
+#footer{
+    background-image: url(./images/image6.gif);
+    height: 85px;
+}
+#footer ol{
+    padding-top: 50%;
+    padding-left: 15%;
+    text-align: center;
+    display: inline;
+    font-size: 270%;
+}
+#footer li{
+    margin-left: 17%;
+    margin-top: 1%;
+    float: left;
+    display: inline;
+}
+#footer a:hover{
+    color: rgb(248, 255, 255);
+}
+#about{
+    background-image: url(./images/image7.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#about h1{
+    color: bisque;
+    padding-top: 40px;
+    text-align: center;
+    background-color: rgb(3, 38, 54);
+    font-family: cursive;
+    font-size: 250%;
+    border: 5px solid rgb(31, 39, 94);
+    height: 75px;
+    box-shadow: 0 0 15px 0 bla;
+}
+#about p{
+    padding-top: 3%;
+    font-family: fantasy;
+    margin-left: 34%;
+}
+.aboutImg{
+    margin-left: 13%;
+    float: left;
+}
+#about h3{
+    color: rgb(0, 0, 0);
+    margin-top: 6%;
+    font-size: 50px;
+    font-family: cursive;
+    text-align: center;
+}
+.hobby ul{
+    margin-left: 8%;
+}
+.hobby li{
+    padding-left: 3%;
+    display: inline;
+}
+.hobby img{
+    border: 3px solid black;
+}
+#skills{
+    background-image: url(./images/skills.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50%;
+}
+#skills h1{
+    color: bisque;
+    padding-top: 40px;
+    text-align: center;
+    background-color: rgb(3, 38, 54);
+    font-family: cursive;
+    font-size: 250%;
+    border: 5px solid rgb(31, 39, 94);
+    height: 75px;
+    box-shadow: 0 0 15px 0 black;
+}
+#skills h2{
+    color: blanchedalmond;
+}
+#skills ul{
+    padding: 0;
+    list-style: none;
+}
+#skills li{
+    margin: 20px 0;
+}
+.bar{
+    color: darkslateblue;
+    display: block;
+    height: 12px;
+    border: 2px solid rgb(223, 133, 133);
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: rgb(180, 115, 115);
+}
+.bar span{
+    height: 12px;
+    float: left;
+    background: lightgoldenrodyellow;
+}
+.C{
+    width: 60%;
+}
+.Cplus{
+    width: 40%;
+}
+.Java{
+    width: 25%;
+}
+.PHP{
+    width: 15%;
+}
+.HTML{
+    width: 75%;
+}
+.CSS{
+    width: 60%;
+}
+#project{
+    background-image: url(./images/projectb.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50%;
+}
+#project h1{
+    color: bisque;
+    padding-top: 40px;
+    text-align: center;
+    background-color: rgb(3, 38, 54);
+    font-family: cursive;
+    font-size: 250%;
+    border: 5px solid rgb(31, 39, 94);
+    height: 75px;
+    box-shadow: 0 0 15px 0 black;
+}
+.slider-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+
+/*---------- Animation ----------*/
+
+@-webkit-keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 1200px;}
+    30% {left: 1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left: 0px;}
+}
+.slide-images{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+#contact{
+    background-image: url(./images/contact.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50%;
+}
+#contact h1{
+    color: bisque;
+    padding-top: 40px;
+    text-align: center;
+    background-color: rgb(3, 38, 54);
+    font-family: cursive;
+    font-size: 250%;
+    border: 5px solid rgb(31, 39, 94);
+    height: 75px;
+    box-shadow: 0 0 15px 0 black;
+}
+#contact p{
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    font-size: 30px;
+}
+#contact ol{
+    padding-top: 100%;
+    padding-left: 15%;
+    text-align: center;
+    display: inline;
+    font-size: 400%;
+}
+#contact li{
+    margin-left: 16%;
+    margin-top: 8%;
+    float: left;
+    display: inline;
+}
+#contact a:hover{
+    color: rgb(87, 99, 35);
+}
